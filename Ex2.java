@@ -22,17 +22,14 @@ class Ex2_0 extends Ex{
 
 class Ex2_1 extends Ex{
 	void execute(){
-		int x;
-	        int y;
-                int z;
+		double x;
+	        double y;
 
 		x = 63;
 		y = 18;
-                z = 70
 
 		System.out.println("xの値は" + x + "です。");
 		System.out.println("yの値は" + y + "です。");
-	        System.out.println("zの値は" + z + "です。");
 		System.out.println("合計は" + (x + y) + "です。");
 		System.out.println("平均は" + (x + y) / 2 + "です。");
         }
@@ -42,12 +39,15 @@ class Ex2_2 extends Ex{
 	void execute(){
 		int x;
 		int y;
+                int z;
 
 		x = 63;
 		y = 18;
+                z = 70;
 
 		System.out.println("xの値は" + x + "です。");
 		System.out.println("yの値は" + y + "です。");
+	        System.out.println("zの値は" + z + "です。");
 		System.out.println("合計は" + (x + y) + "です。");
 		System.out.println("平均は" + (x + y) / 2 + "です。");
 	}
@@ -90,7 +90,11 @@ public class Ex2 {
 		a = new Ex2_00();
 		a = new Ex2_000();
 */
+		a = new Ex2_0();
+		a.execute();
 		a = new Ex2_1();
+		a.execute();
+		a = new Ex2_2();
 		a.execute();
 	}
 }
