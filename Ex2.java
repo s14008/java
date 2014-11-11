@@ -74,7 +74,7 @@ class Ex2_4 extends Ex{
 
             System.out.println("x + 10 = " + (x + 10)); // x + yの値を表示
             System.out.println("x - 10 = " + (x - 10)); // x - yの値を表示
-    
+
     }
 }
 
@@ -112,6 +112,29 @@ class Ex2_6 extends Ex{
        }
 }
 
+class Ex2_7 extends Ex{
+	void execute(){
+		Random rand = new Random();
+
+		int luchy = rand.nextInt(9) +1;		// 0～9の乱数
+        int lunchy = rand.nextInt(9) *-1-1;
+		int lunnchy = rand.nextInt(99) +10;		// 0～9の乱数
+        System.out.println("1桁の正の整数値は" + luchy + "です。");
+		System.out.println("1桁の負の整数値は" + lunchy + "です。");
+		System.out.println("2桁の正の整数値は" + lunnchy + "です。");
+	}
+}
+
+class Ex2_9 extends Ex{
+	void execute(){
+		public double nextDouble() {
+           return (((long)next(26) << 27) + next(27))
+               / (double)(1L << 53);
+
+        }
+
+    }
+}
 class Ex2_00 extends Ex{
 	void execute(){
 		Scanner stdIn = new Scanner(System.in);
@@ -120,7 +143,7 @@ class Ex2_00 extends Ex{
 
 		System.out.print("xの値：");		// xの値の入力を促す
 		int x = stdIn.nextInt();
-		
+
 		System.out.print("yの値：");		// yの値の入力を促す
 		int y = stdIn.nextInt();
 
@@ -150,7 +173,8 @@ public class Ex2 {
 		a = new Ex2_00();
 		a = new Ex2_000();
 */
-		a = new Ex2_0();
+/*
+    a = new Ex2_0();
 		a.execute();
 		a = new Ex2_1();
 		a.execute();
@@ -164,5 +188,11 @@ public class Ex2 {
 		a.execute();
 		a = new Ex2_6();
 		a.execute();
+        a = new Ex2_7();
+		a.execute();
+*/
+        a = new Ex2_9();
+        a.execute();
+
 	}
 }
