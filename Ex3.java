@@ -6,7 +6,6 @@ class Ex3{
 		return "その値は正です";
         }else {
           return "その値は０か負です";
-
         }
 
 	}
@@ -25,14 +24,27 @@ class Ex3{
 
 	public String ex3_2(int a, int b){
 
-		return "dummy";
-	}
+	  if(a%b == 0) {
+       return b + "は"  + a + "の約数です";
+      }else{
+          return  b + "は" + a +"の約数ではありません。";
+
+      }
+
+  }
+
 
 	public String ex3_3(int a, int b){
 
-		return "dummy";
+        int max_num;
 
-	}
+        if(a >= b){
+          return  max_num == a;
+        }else{
+         return  max_num == b;
+    }
+
+    }
 
 	public String ex3_4(int a){
 
